@@ -1,0 +1,134 @@
+
+body {
+    --background: #1b1b1b;
+    --button: #2b2b2b;
+    --text-link: #8cb4ff;
+    --text: #fff;
+    --text-secondary: #d9d9d9;
+
+    margin: 0;
+    background-color: var(--background);
+    color: var(--text);
+
+}
+h1 {
+    margin: 0;
+    background-color: var(--background);
+    text-align: center;
+
+    position: sticky;
+    top: 0;
+
+    display: flex;
+    align-items: center;
+
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    width: auto;
+    height: auto;
+
+    gap: 5px;
+
+    box-shadow: 0 -2px 5px 3px black;
+
+    padding: 5px;
+    padding-right: 10px;
+}
+
+.mainNavbarContent {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+
+    display: flex;
+    flex: 1 1;
+    align-items: center;
+    text-align: center;
+    gap: 5px;
+
+}
+
+#regularNavbar {
+    width: max-content;
+    flex-direction: row;
+}
+#hamburgerNavbar {
+    gap: 0;
+    display: none;
+    width: 0;
+    height: 0;
+}
+
+.hiddenfix {
+    gap: 0;
+    display: none;
+    width: 0;
+    height: 0;
+}
+
+.navbarBox {
+    text-decoration: none;
+
+    text-align: center;
+    padding: 0.2cm;
+    padding-top: 0.1cm;
+    padding-bottom: 0.1cm;
+
+    background-color: var(--button);
+    border-radius: 0.2rem;
+}
+
+.rightNavbarBox {
+    align-items: end;
+
+    text-decoration: none;
+
+    text-align: center;
+    padding: 0.2cm;
+    padding-top: 0.1cm;
+    padding-bottom: 0.1cm;
+
+    background-color: var(--button);
+    border-radius: 0.2rem;
+}
+
+@media (-webkit-min-device-pixel-ratio: 2),   /* Webkit-based browsers */
+    (min--moz-device-pixel-ratio: 2),         /* Older Firefox browsers (prior to Firefox 16) */
+    (min-resolution: 2dppx),                  /* The standard way */
+    (min-resolution: 192dpi),                 /* dppx fallback */  
+    (max-width: 580px) {                      /*or if reselution is simpl too low*/
+    .mainNavbarContent {
+        flex-direction: column;
+    
+        width: auto;
+        height: max-content;
+
+        background-color: #8cb4ff;
+    }
+
+    #regularNavbar {
+        gap: 0;
+        display: none;
+        width: 0;
+        height: 0;
+    }
+
+    #hamburgerNavbar {
+        width: auto;
+        flex-direction: column;
+    }
+}
+
+a:not(.button) {
+    color: var(--text-secondary);
+}
+
+a:not(.button).navbarBox {
+    color: var(--text-secondary);
+}
+
+.mainWrapper {
+    padding-left: 1rem;
+    padding-top: 1rem;
+}
