@@ -5,28 +5,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
     <title>My test page</title>
 
+    <link rel="stylesheet" href="defaultStyles.css" />
     <link rel="stylesheet" href="styles.css" />
     <script src="navbarManager.js" defer></script>
   </head>
   <body>
     <h1>
       <a class="navbarBox" href="index.html">Home</a>
-      <div class="mainNavbarContent" id="regularNavbar">
-        <a class="navbarBox" href="childPages/page1/childsite.html">other place</a>
-        <a class="navbarBox" href="childPages/page2/childsite.html">other place</a>
-      </div>
+      <ul class="mainNavbarContent" id="regularNavbar">
+        <li>
+          <a class="navbarBox" href="htx-roskilde/main-page.html">other place</a>
+        </li>
+      </ul>
       <div class="mainNavbarContent" id="hamburgerNavbar">test</div>
       <a class="rightNavbarBox" href="">settings</a>
     </h1>
-    <div class="mainWrapper">
-      <div>This is my page</div>
-      <div>
+    <article class="mainWrapper">
+      <p>This is my page</p>
+      <p>
         1<br />2<br />3<br />4<br />5<br />6<br />7<br />8<br />9<br />
         1<br />2<br />3<br />4<br />5<br />6<br />7<br />8<br />9<br />
         1<br />2<br />3<br />4<br />5<br />6<br />7<br />8<br />9<br />
         1<br />2<br />3<br />4<br />5<br />6<br />7<br />8<br />9<br />
         1<br />2<br />3<br />4<br />5<br />6<br />7<br />8<br />9<br />
-      </div>
-    </div>
+      </p>
+    </article>
   </body>
 </html>
