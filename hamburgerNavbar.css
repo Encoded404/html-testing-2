@@ -1,0 +1,28 @@
+.mainNavbarContent {
+    flex-direction: column;
+
+    width: auto;
+    height: max-content;
+
+    background-color: #8cb4ff;
+}
+
+#regularNavbar {
+    gap: 0;
+    display: none;
+    width: 0;
+    height: 0;
+}
+
+#hamburgerNavbar {
+    width: auto;
+    height: auto;
+    flex-direction: column;
+    display: flex;
+
+    overflow: hidden;
+
+    position: relative;
+    right: 0;
+    top: 0px;
+}

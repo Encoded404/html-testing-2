@@ -70,12 +70,12 @@ body {
     border-radius: 0.2rem;
 }
 
-@media (-webkit-min-device-pixel-ratio: 2)   /* Webkit-based browsers */
-    (min--moz-device-pixel-ratio: 2),         /* Older Firefox browsers (prior to Firefox 16) */
-    (min-resolution: 2dppx),                  /* The standard way */
-    (min-resolution: 192dpi),                 /* dppx fallback */  
-    (max-width: 580px) {                      /*or if reselution is simpl too low*/
-    .mainNavbarContent {
+/* @media (-webkit-min-device-pixel-ratio: 2),   /* Webkit-based browsers */
+/*    (min--moz-device-pixel-ratio: 2),         /* Older Firefox browsers (prior to Firefox 16) */
+/*    (min-resolution: 2dppx),                  /* The standard way */
+/*    (min-resolution: 192dpi),                 /* dppx fallback */  
+/*    (max-width: 580px) {                      /*or if reselution is simpl too low*/
+/*    .mainNavbarContent {
         flex-direction: column;
     
         width: auto;
@@ -95,7 +95,7 @@ body {
         width: auto;
         flex-direction: column;
     }
-}
+}*/
 
 a:not(.button) {
     color: var(--text-secondary);
