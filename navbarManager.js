@@ -1,4 +1,4 @@
-const alwaysUseBurgerNavbar = true;
+const alwaysUseBurgerNavbar = false;
 
 
 const nonHamburgerNavbar = document.querySelector("#regularNavbar");

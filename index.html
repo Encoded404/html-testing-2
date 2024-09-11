@@ -6,22 +6,23 @@
     <title>My test page</title>
 
     <link rel="stylesheet" href="defaultStyles.css" />
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="defaultNavbar.css" />
     <script src="navbarManager.js" defer></script>
   </head>
   <body>
     <h1>
-      <a class="navbarBox" href="index.html">
-        <ul id="regularNavbar"></ul>
-        <ul id="hamburgerNavbar"></ul>
+      <a class="navbarContatiner" href="index.html">
+        <img src="homeBlack.svg" alt="home symbol" style="width: 2rem;">
       </a>
-      <ul class="mainNavbarContent" id="regularNavbar">
-        <li>
-          <a class="navbarBox" href="htx-roskilde/main-page.html">other place</a>
-        </li>
+      <ul class="navbarContatiner">
+        <ul class="mainNavbarContent" id="regularNavbar">
+          <li>
+            <a class="navbarBox" href="htx-roskilde/main-page.html">other place</a>
+          </li>
+        </ul>
+        <ul class="mainNavbarContent" id="hamburgerNavbar">test</ul>
+        <a class="rightNavbarBox" href="">settings</a>
       </ul>
-      <ul class="mainNavbarContent" id="hamburgerNavbar">test</ul>
-      <a class="rightNavbarBox" href="">settings</a>
     </h1>
     <article class="mainWrapper">
       <p>This is my page</p>
